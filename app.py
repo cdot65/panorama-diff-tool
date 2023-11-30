@@ -170,7 +170,8 @@ def main():
 
     logging.info("Generating configuration diff...")
     diff_result = generate_diff_string(
-        filtered_candidate_config, filtered_running_config
+        filtered_running_config,
+        filtered_candidate_config,
     )
 
     if diff_result:
